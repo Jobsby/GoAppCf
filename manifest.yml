@@ -1,0 +1,9 @@
+---
+applications:
+- name: log-spammer-app
+  instances: 1
+  memory: 64MB
+  host: your-app-name
+  buildpack: https://github.com/cloudfoundry/go-buildpack.git
+  env:
+    GOPACKAGENAME : log-spammer-app
